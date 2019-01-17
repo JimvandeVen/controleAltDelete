@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+}
+
+.firstSection {
+  height: 100vh;
+}
+
+h1 {
+  margin: 0 16vw 0 16vw;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h1 span {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  margin: 0 16vw 0 16vw;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.meldingen {
+  margin: 2vh 16vw 10vh 16vw;
+  font-size: 1em;
+}
+
+p,ul {
+  margin: 2vh 16vw 0 16vw;
+}
+
+.yellowSection {
+  position: relative;
+  background-color: #fef33d;
+}
+
+.blackSection {
+  position: relative;
+  background-color: black;
+  color: #fef33d;
+}
+
+.bottomTriangleBlack {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 15vw solid black;
+}
+
+.bottomTriangleYellow {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 100vw solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 15vw solid #fef33d;
+}
+
+.svgGeweldsincidenten {
+  margin: 8vh 24vw 0 24vw;
+}
+.introSentence {
+  font-weight: bold;
+}
+ul{
+  color: white;
+  list-style: none;
+}
+
+.percentages, ul{
+  text-align: center;
+}
+
+.percentagesText{
+  color: white;
+}
+
+#geweldsincidentenSection {
+  height: 300vh;
+}
+
+#svgTop {
+  margin: 8vh 0 0 16vw;
+  width: 60vw;
+}
+
+#counterTop {
+  border-bottom: 0.5em solid white;
+  transition: border-bottom ease-in-out 2s;
+}
+
+#svgTopCircle {
+  fill: url(#svgTopCircleFill);
+}
+
+ul:last-of-type{
+  margin-bottom: 3em;
+}
+
+.svgGeweldCircleFill{
+  fill: url(#svgGeweldCircleFill);
+  transition: all 5s;
+  opacity: 0.3;
+}
+
+.svgStickCircleFill{
+  fill: url(#svgStickCircleFill);
+  transition: all 5s;
+  opacity: 0.3;
+}
+
+.svgPeppersprayCircleFill{
+  fill: url(#svgPeppersprayCircleFill);
+  transition: all 5s;
+  opacity: 0.3;
+}
+
+.svgDogCircleFill{
+  fill: url(#svgDogCircleFill);
+  transition: all 5s;
+  opacity: 0.3;
+}
+
+.svgGunCircleFill{
+  fill: url(#svgGunCircleFill);
+  transition: all 5s;
+  opacity: 0.3;
+}
+
+.svgMissingData{
+  width: 5em;
+  max-height: 5em;
+}
+
+.missingDataText, .missingDataText p, .missingDataText h2{
+  margin:0;
+}
+
+.missingDataWrapper {
+  display: flex;
+  margin: 2em;
+}
+
+.missingDataText{
+  width: 15em;
+  margin-left: 1em;
+}
+
+.missingDataSlider{
+  /* opacity: 0; */
+  height: 5em;
+  transform: translateX(30%) scale(0.95);
+  transition: all .5s;
+}
+
+.active{
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+#geweldsInzet {
+  z-index: 100;
+  text-align: center;
+  right: 4em;
+  top: 0.2em;
+  position: absolute;
+  background-color: #fef33d;
+  color: black;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#geweldsInzetPopup {
+  right: 4em;
+  top: 0.2em;
+  /* width: 244.813px; */
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-left: 1vh 2vw;
+  border-radius: 1em;
+  padding: 1em;
+  transition: height 1s, width 1s, padding 1s, visibility 1s,
+    opacity 0.5s ease-out;
+}
+
+.hidden {
+  display: none;
+}
