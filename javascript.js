@@ -121,22 +121,16 @@ function animatePercentage(id, start, end, duration) {
   }, stepTime);
 }
 
-const sliderTexts = document.querySelectorAll(".missingDataSlider")
+const sliderSVGs = document.querySelectorAll(".svgMissingData")
 
 function checkSlide(e){
-
-  sliderTexts.forEach(sliderText => {
-    console.log("check", sliderText.height);
-    const slideInAt = (window.scrollY + window.innerHeight) - sliderText.height / 2
-    const textBottom = sliderText.offsetTop + sliderText.height
-    const ishalfShown = slideInAt > sliderText.offsetTop
-    const isNotScrolledPast = window.scrollY < textBottom
-    if (ishalfShown && isNotScrolledPast) {
-      sliderText.classList.add("active")
+  sliderSVGs.forEach(sliderSVG => {
+    if (sliderSVG.getBoundingClientRect().y < 500) {
+      sliderSVG.classList.add("active")
     } else {
-      sliderText.classList.remove("active")
+      sliderSVG.classList.remove("active")
     }
   })
 }
 
-window.addEventListener("scroll", debounce(checkSlide));
+window.addEventListener("scroll", debounce(checkSlide, 100));

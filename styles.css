@@ -149,6 +149,9 @@ ul:last-of-type{
 .svgMissingData{
   width: 5em;
   max-height: 5em;
+  opacity: 0;
+  transform: translateX(-130%) scale(0.95);
+  transition: all .5s;
 }
 
 .missingDataText, .missingDataText p, .missingDataText h2{
@@ -163,13 +166,6 @@ ul:last-of-type{
 .missingDataText{
   width: 15em;
   margin-left: 1em;
-}
-
-.missingDataSlider{
-  /* opacity: 0; */
-  height: 5em;
-  transform: translateX(30%) scale(0.95);
-  transition: all .5s;
 }
 
 .active{
