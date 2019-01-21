@@ -23,34 +23,6 @@ console.log(svgGeweldsincidentenCircles);
 // function doewat(geweld){
 //   animatePercentage(`${geweld}Percentage`, 0, 73, 2000)
 // }
-
-function checkScroll(e) {
-  svgGeweldsincidentenCircles.forEach(svgGeweldsincidentenCircle => {
-    if (svgGeweldsincidentenCircle.dataset.geweld == "fysiek") {
-      if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        animatePercentage("fysiekPercentage", 0, 73, 2000);
-      }
-    } else if (svgGeweldsincidentenCircle.dataset.geweld == "stick") {
-      if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        animatePercentage("stickPercentage", 0, 3, 2000);
-      }
-    } else if (svgGeweldsincidentenCircle.dataset.geweld == "pepperspray") {
-      if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        animatePercentage("peppersprayPercentage", 0, 10, 2000);
-      }
-    } else if (svgGeweldsincidentenCircle.dataset.geweld == "dog") {
-      if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        animatePercentage("dogPercentage", 0, 2, 2000);
-      }
-    } else {
-      if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        animatePercentage("gunPercentage", 0, 12, 2000);
-      }
-    }
-    // console.log(svgGeweldsincidentenCircle.getBoundingClientRect().y)
-  });
-}
-
 function debounce(func, wait = 20, immediate = true) {
   let timeout;
   return function() {
@@ -66,8 +38,6 @@ function debounce(func, wait = 20, immediate = true) {
     if (callNow) func.apply(context, args);
   };
 }
-
-window.addEventListener("scroll", debounce(checkScroll));
 
 function infoPopup() {
   let geweldsInzetPopup = document.querySelector("#geweldsInzetPopup");
@@ -91,7 +61,6 @@ function animateValue(id, start, end, duration) {
 }
 
 function animatePercentage(id, start, end, duration) {
-  // console.log(document.getElementById(id))
   let range = end - start;
   let current = start;
   let increment = end > start ? 1 : -1;

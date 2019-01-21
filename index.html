@@ -13,7 +13,7 @@
   </head>
   <body>
     <section class="yellowSection firstSection">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 634.89 285.55">
+      <svg class="titel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 634.89 285.55">
         <defs>
           <style>
             .cls-1 {
@@ -223,25 +223,25 @@
       <h1 class="meldingen">
         <span id="counterTop">10000</span> geweldsincidenten
       </h1>
-      <h1>Politiegeweld</h1>
-      <h2>en de ontbrekende cijfers</h2>
       <p class="introSentence">
-        In 2015 zegt de politie bij meer dan 10.000 incidenten geweld te hebben
-        gebruikt.
+        In 2015 zijn van de <span class="numbers">10.000</span> incidenten waarbij de politie geweld geruikte maar <span class="numbers">39</span> onderzocht.
       </p>
-      <p>
-        Van alle 1200 integriteitsonderzoeken in 2015 zijn er maar 39 die
-        betrekking hebben tot geweld.
+      <p class="lastParagraph">
+        Hoe zorgen de politieorganisatie en het Openbaar Ministerie dat agenten professioneel en binnen de wet handelen?
       </p>
       <div class="bottomTriangleBlack"></div>
     </section>
     <section id="geweldsincidentenSection" class="blackSection">
       <h1>Integriteits- onderzoeken</h1>
+      <p class="introSentence">Er worden te weinig onderzoeken gestart door het OM naar de integriteit van de agenten bij geweldsincidenten.</p>
+      <img class="gif" src="src\Composition_4.gif" alt="data visualisatie">
+      <p>Je zou een aantal conclussies kunnen proberen te trekken uit deze cijfers. 39 onderzoeken zou kunnen betekenen dat het heel goed gaat bij de politie. Dat het gebruik van geweld op een goede manier wordt toegepast. Maar het zou ook kunnen betekenen dat er geen goed onderzoek gedaan wordt.</p>
+      <p class="lastParagraph">Het vervelende is dat er te veel informatie mist of onduidelijk is. De transparantie laat te wensen over. Waarom kunnen wij de data niet volledig inzien?</p>
       <div class="bottomTriangleYellow"></div>
     </section>
     <section class="yellowSection">
       <h1>Gewelds- incidenten</h1>
-      <div id="geweldsInzet" onclick="infoPopup()">i</div>
+      <img id="geweldsInzet" onclick="infoPopup()" src="src\Information.svg" alt="info">
       <div id="geweldsInzetPopup" class="hidden">
         Voor meer informatie over de inzet van geweld door de politie kijk
         <a href="https://www.controlealtdelete.nl/politiegeweld">hier</a>.
@@ -252,10 +252,9 @@
       </p>
       <p>
         39 onderzoeken op 10.000 meldingen lijkt wel erg weinig. Wat kan dit
-        lage aantal onderzoeken betekenen? Wat betekent het niet? Wat missen we
-        in de data die wordt vrijgegeven? Deze vragen en meer komen bij ons op.
-        Laten we er dieper op ingaan.
+        lage aantal onderzoeken betekenen? Wat betekent het niet? Zijn de gegevens betrouwbaar?
       </p>
+      <h2 class="geweldsincidentenKopjes">Fysiek geweld</h2>
       <svg
         class="svgGeweldsincidenten"
         xmlns="http://www.w3.org/2000/svg"
@@ -316,13 +315,9 @@
           </g>
         </g>
       </svg>
-      <p class="percentages"><span id="fysiekPercentage">73</span>%</p>
-      <ul>
-        <li>Fysiek geweld 71%</li>
-        <li>Alternatief geweld 1.5%</li>
-        <li>Geweld onder leiding van meerdere 0.5%</li>
-        <li>Geweldsaanwendingen 0%</li>
-      </ul>
+      <h2 class="percentages">7533</h2>
+      <p class="geweldsincidentenTekst">Het is niet bekend welke vormen van fysiek geweld gebruikt zijn (nekklem, slaan, schoppen, enz.). Ook is het onduidelijk welk letstel voort is gekomen uit het gebruik van fysiek geweld. Ook is niet bekend welke vorm van fysiek geweld gebruikt is.</p>
+      <h2 class="geweldsincidentenKopjes">Wapenstok</h2>
       <svg
         class="svgGeweldsincidenten"
         xmlns="http://www.w3.org/2000/svg"
@@ -367,12 +362,9 @@
           </g>
         </g>
       </svg>
-      <p class="percentages"><span id="stickPercentage">3</span>%</p>
-      <ul>
-        <li>Korte wapenstok 2%</li>
-        <li>Lange wapenstok 1%</li>
-        <li>Elektische wapensto 0.02%</li>
-      </ul>
+      <h2 class="percentages">982</h2>
+      <p class="geweldsincidentenTekst">Ook bij de wapenstok is het onduidelijk welk letsel er aan de incidenten overgehouden is. Wat we wel weten is dat de wapenstok erg veel schade aan kan richten.</p>
+      <h2 class="geweldsincidentenKopjes">Pepperspray</h2>
       <svg
         class="svgGeweldsincidenten"
         xmlns="http://www.w3.org/2000/svg"
@@ -445,11 +437,10 @@
           </g>
         </g>
       </svg>
-      <p class="percentages"><span id="peppersprayPercentage">10</span>%</p>
-      <p class="percentagesText">
-        Het is onduidelijk of de politie alle pepperspray incidenten
-        registreert.
+      <h2 class="percentages">342</h2>
+      <p class="geweldsincidentenTekst"> Het is onduidelijk of de politie alle pepperspray incidenten registreert.
       </p>
+      <h2 class="geweldsincidentenKopjes">Politiehond</h2>
       <svg
         class="svgGeweldsincidenten"
         xmlns="http://www.w3.org/2000/svg"
@@ -514,11 +505,11 @@
           </g>
         </g>
       </svg>
-      <p class="percentages"><span id="dogPercentage">2</span>%</p>
-      <p class="percentagesText">
-        Inzet van de politiehond wordt niet gereguleerd. Volgens de wet is enkel
-        begeleiding voldoende voor het inzetten van de hond.
+      <h2 class="percentages">226</h2>
+      <p>
+        De inzet van politiehonden is niet gereguleerd. Er zijn bijna geen regels voor. Terwijl het een politiehond ernstig letsel kan veroorzaken.
       </p>
+      <h2 class="geweldsincidentenKopjes">Vuurwapen</h2>
       <svg
         class="svgGeweldsincidenten"
         xmlns="http://www.w3.org/2000/svg"
@@ -591,13 +582,8 @@
           </g>
         </g>
       </svg>
-      <p class="percentages"><span id="gunPercentage">12</span>%</p>
-      <ul>
-        <li>Richten van het vuurwapen 8.4%</li>
-        <li>Richten van het vuurwapen 2.4%</li>
-        <li>Waarschuwingsschot 0.6%</li>
-        <li>Ernstvuur 0.6%</li>
-      </ul>
+      <h2 class="percentages">1224</h2>
+      <p class="lastParagraph">De onderzoeken die over geweldsincidenten met een vuurwapen worden onderzocht door de Rijksrecherge. de Rijksrecherge geeft nog minder data vrij dan de politie.</p>
       <div class="bottomTriangleBlack"></div>
     </section>
     <section class="blackSection">

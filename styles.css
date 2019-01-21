@@ -36,11 +36,21 @@ h2 {
 }
 
 .meldingen {
-  margin: 2vh 16vw 10vh 16vw;
+  margin: 2vh 16vw 1em 16vw;
   font-size: 1em;
 }
 
-p,ul {
+.gif{
+  margin: 1em 0 1em 0;
+  max-width: 90vw;
+  transform: translateX(5vw);
+}
+
+.lastParagraph {
+  margin-bottom: 4em;
+}
+
+p{
   margin: 2vh 16vw 0 16vw;
 }
 
@@ -76,17 +86,25 @@ p,ul {
 }
 
 .svgGeweldsincidenten {
-  margin: 8vh 24vw 0 24vw;
+  margin: 0 24vw 0 24vw;
 }
+
+.geweldsincidentenKopjes{
+  margin-top: 2em;
+  margin-bottom: .5em;
+  text-align: center;
+}
+.geweldsincidentenTekst{
+  margin-top: 0;
+}
+
 .introSentence {
   font-weight: bold;
 }
-ul{
-  color: white;
-  list-style: none;
-}
 
-.percentages, ul{
+.percentages{
+  transform: translateY(-0.2em);
+  font-size: 2em;
   text-align: center;
 }
 
@@ -94,18 +112,29 @@ ul{
   color: white;
 }
 
+.titel{
+  transform: translateX(5vw);
+  max-width: 90vw;
+  margin: .5em 0 0 0;
+}
+
 #geweldsincidentenSection {
-  height: 300vh;
+  /* height: 300vh; */
 }
 
 #svgTop {
-  margin: 8vh 0 0 16vw;
-  width: 60vw;
+  transform: translateX(25vw);
+  max-width: 50vw;
 }
 
 #counterTop {
   border-bottom: 0.5em solid white;
   transition: border-bottom ease-in-out 2s;
+}
+
+.numbers{
+  font-size: 1.2em;
+  border-bottom: 0.16em solid white;
 }
 
 #svgTopCircle {
@@ -169,6 +198,7 @@ ul:last-of-type{
 #geweldsInzetPopup {
   right: 4em;
   top: 0.2em;
+  max-width: 68vw;
   /* width: 244.813px; */
   position: absolute;
   background-color: white;
