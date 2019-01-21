@@ -28,38 +28,23 @@ function checkScroll(e) {
   svgGeweldsincidentenCircles.forEach(svgGeweldsincidentenCircle => {
     if (svgGeweldsincidentenCircle.dataset.geweld == "fysiek") {
       if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        svgGeweldsincidentenCircle.classList.add("svgGeweldCircleFill");
         animatePercentage("fysiekPercentage", 0, 73, 2000);
-      } else {
-        svgGeweldsincidentenCircle.classList.remove("svgGeweldCircleFill");
       }
     } else if (svgGeweldsincidentenCircle.dataset.geweld == "stick") {
       if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        svgGeweldsincidentenCircle.classList.add("svgStickCircleFill");
         animatePercentage("stickPercentage", 0, 3, 2000);
-      } else {
-        svgGeweldsincidentenCircle.classList.remove("svgStickCircleFill");
       }
     } else if (svgGeweldsincidentenCircle.dataset.geweld == "pepperspray") {
       if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        svgGeweldsincidentenCircle.classList.add("svgPeppersprayCircleFill");
         animatePercentage("peppersprayPercentage", 0, 10, 2000);
-      } else {
-        svgGeweldsincidentenCircle.classList.remove("svgPeppersprayCircleFill");
       }
     } else if (svgGeweldsincidentenCircle.dataset.geweld == "dog") {
       if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        svgGeweldsincidentenCircle.classList.add("svgDogCircleFill");
         animatePercentage("dogPercentage", 0, 2, 2000);
-      } else {
-        svgGeweldsincidentenCircle.classList.remove("svgDogCircleFill");
       }
     } else {
       if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 300) {
-        svgGeweldsincidentenCircle.classList.add("svgGunCircleFill");
         animatePercentage("gunPercentage", 0, 12, 2000);
-      } else {
-        svgGeweldsincidentenCircle.classList.remove("svgGunCircleFill");
       }
     }
     // console.log(svgGeweldsincidentenCircle.getBoundingClientRect().y)

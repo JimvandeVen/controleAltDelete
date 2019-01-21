@@ -116,30 +116,6 @@ ul:last-of-type{
   margin-bottom: 3em;
 }
 
-.svgGeweldCircleFill{
-  fill: url(#svgGeweldCircleFill);
-  transition: all 5s;
-  opacity: 0.3;
-}
-
-.svgStickCircleFill{
-  fill: url(#svgStickCircleFill);
-  transition: all 5s;
-  opacity: 0.3;
-}
-
-.svgPeppersprayCircleFill{
-  fill: url(#svgPeppersprayCircleFill);
-  transition: all 5s;
-  opacity: 0.3;
-}
-
-.svgDogCircleFill{
-  fill: url(#svgDogCircleFill);
-  transition: all 5s;
-  opacity: 0.3;
-}
-
 .svgGunCircleFill{
   fill: url(#svgGunCircleFill);
   transition: all 5s;
@@ -161,6 +137,10 @@ ul:last-of-type{
 .missingDataWrapper {
   display: flex;
   margin: 2em;
+}
+
+.missingDataWrapperLast{
+  margin-bottom: 5em;
 }
 
 .missingDataText{
