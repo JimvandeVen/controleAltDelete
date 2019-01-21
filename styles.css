@@ -210,6 +210,14 @@ ul:last-of-type{
     opacity 0.5s ease-out;
 }
 
+a:visited{
+  color: #B6AB04;
+}
+
+a{
+  color: #fef33d
+}
+
 .hidden {
   display: none;
 }

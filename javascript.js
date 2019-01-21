@@ -23,7 +23,7 @@ console.log(svgGeweldsincidentenCircles);
 // function doewat(geweld){
 //   animatePercentage(`${geweld}Percentage`, 0, 73, 2000)
 // }
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 10, immediate = true) {
   let timeout;
   return function() {
     let context = this,
@@ -79,12 +79,20 @@ const sliderSVGs = document.querySelectorAll(".svgMissingData")
 
 function checkSlide(e){
   sliderSVGs.forEach(sliderSVG => {
-    if (sliderSVG.getBoundingClientRect().y < 500) {
+    if (sliderSVG.getBoundingClientRect().y < 600) {
       sliderSVG.classList.add("active")
     } else {
       sliderSVG.classList.remove("active")
     }
   })
 }
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 window.addEventListener("scroll", debounce(checkSlide, 100));
