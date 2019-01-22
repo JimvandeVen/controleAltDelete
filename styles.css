@@ -5,10 +5,22 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.socialWrapper{
+  margin-left: 25vw;
+}
+.socialStyle{
+  margin: 1em 0 0 1em;
+  max-width: 2em;
+}
+
+.socialStyleBottom{
+  margin: 1em 0 1em 1em;
+  max-width: 2em;
+}
+
 section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 100vw;
 }
 
