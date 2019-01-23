@@ -1,6 +1,6 @@
 document.addEventListener(
   "DOMContentLoaded",
-  animateValue("counterTop", 0, 10260, 5500)
+  animateValue("counterTop", 0, 10000, 5500)
 );
 
 let svgGeweldsincidentenCircles = document.querySelectorAll(
@@ -8,21 +8,6 @@ let svgGeweldsincidentenCircles = document.querySelectorAll(
 );
 console.log(svgGeweldsincidentenCircles);
 
-// function checkScroll(data){
-//   svgGeweldsincidentenCircles.forEach(svgGeweldsincidentenCircle => {
-//     if (svgGeweldsincidentenCircle.getBoundingClientRect().y < 200) {
-//       svgGeweldsincidentenCircle.classList.add("svgGeweldCircleFill");
-//       let geweld = svgGeweldsincidentenCircle.dataset.geweld
-//       doewat(geweld)
-//     } else {
-//       svgGeweldsincidentenCircle.classList.remove("svgGeweldCircleFill");
-//     }
-//   })
-// }
-//
-// function doewat(geweld){
-//   animatePercentage(`${geweld}Percentage`, 0, 73, 2000)
-// }
 function debounce(func, wait = 10, immediate = true) {
   let timeout;
   return function() {
@@ -42,7 +27,11 @@ function debounce(func, wait = 10, immediate = true) {
 function infoPopup() {
   let geweldsInzetPopup = document.querySelector("#geweldsInzetPopup");
   geweldsInzetPopup.classList.toggle("hidden");
-  // geweldsInzetPopup.classList.toggle("hidden")
+}
+
+function integriteitPopup() {
+  let geweldsInzetPopup = document.querySelector("#integriteitPopup");
+  geweldsInzetPopup.classList.toggle("hidden");
 }
 
 function animateValue(id, start, end, duration) {

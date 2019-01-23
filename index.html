@@ -14,6 +14,7 @@
   <body>
     <section class="yellowSection firstSection">
       <div class="socialWrapper">
+        <div class="delen">DELEN</div>
         <a
           href="https://www.facebook.com/sharer/sharer.php?u=https://relaxed-swirles-1ce12c.netlify.com/"
           target="_blank"
@@ -261,27 +262,38 @@
         waarbij de politie geweld gebruikte maar
         <span class="numbers">39</span> onderzocht.
       </p>
-      <p class="lastParagraph">
+      <p class="geweldsincidentenTekst lastParagraph">
         Hoe zorgen de politieorganisatie en het Openbaar Ministerie dat agenten
         professioneel en binnen de wet handelen?
       </p>
       <div class="bottomTriangleBlack"></div>
     </section>
     <section id="geweldsincidentenSection" class="blackSection">
-      <h1>Integriteits- onderzoeken</h1>
+      <h1 class="mobile">Integriteits- onderzoeken</h1>
+      <h1 class="desktop">Integriteitsonderzoeken</h1>
+      <img
+        class="info"
+        id="integriteit"
+        onclick="integriteitPopup()"
+        src="src\Information_2.svg"
+        alt="info"
+      />
+      <div id="integriteitPopup" class="hidden infoPopup">
+        De data die wij hebben gebruikt voor dit onderzoek is door de politie zelf verstrekt. Wij hebben de jaarverslagen en de integriteitsschendingen van 2012 t/m 2018 gebruikt.
+      </div>
       <p class="introSentence">
         Er worden te weinig onderzoeken gestart door het OM naar de integriteit
         van de agenten bij geweldsincidenten.
       </p>
       <img class="gif" src="src\Composition_8.gif" alt="data visualisatie" />
-      <p>
+      <p class="geweldsincidentenTekst">
         Je zou een aantal conclussies kunnen proberen te trekken uit deze
         cijfers. 39 onderzoeken zou kunnen betekenen dat het heel goed gaat bij
         de politie. Dat het gebruik van geweld op een goede manier wordt
         toegepast. Maar het zou ook kunnen betekenen dat er geen goed onderzoek
         gedaan wordt.
       </p>
-      <p class="lastParagraph">
+      <p class="lastParagraph geweldsincidentenTekst">
         Het vervelende is dat er te veel informatie mist of onduidelijk is. De
         transparantie laat te wensen over. Waarom kunnen wij de data niet
         volledig inzien?
@@ -289,14 +301,16 @@
       <div class="bottomTriangleYellow"></div>
     </section>
     <section class="yellowSection">
-      <h1>Gewelds- incidenten</h1>
+      <h1 class="mobile">Gewelds- incidenten</h1>
+      <h1 class="desktop">Geweldsincidenten</h1>
       <img
+        class="info"
         id="geweldsInzet"
         onclick="infoPopup()"
         src="src\Information.svg"
         alt="info"
       />
-      <div id="geweldsInzetPopup" class="hidden">
+      <div id="geweldsInzetPopup" class="hidden infoPopup">
         Voor meer informatie over de inzet van geweld door de politie kijk
         <a href="https://www.controlealtdelete.nl/politiegeweld" target="_blank"
           >hier</a
@@ -306,7 +320,7 @@
         De politie heeft de bevoegdheid om geweld te gebruiken, onderstaande
         cijfers komen uit de meest complete dataset (2015).
       </p>
-      <p>
+      <p class="geweldsincidentenTekst">
         39 onderzoeken op 10.000 meldingen lijkt wel erg weinig. Wat kan dit
         lage aantal onderzoeken betekenen? Wat betekent het niet? Zijn de
         gegevens betrouwbaar?
@@ -574,9 +588,9 @@
         </g>
       </svg>
       <h2 class="percentages">226</h2>
-      <p>
+      <p class="geweldsincidentenTekst">
         De inzet van politiehonden is niet gereguleerd. Er zijn bijna geen
-        regels voor. Terwijl het een politiehond ernstig letsel kan veroorzaken.
+        regels voor. Terwijl een politiehond ernstig letsel kan veroorzaken.
       </p>
       <h2 class="geweldsincidentenKopjes">Vuurwapen</h2>
       <svg
@@ -652,7 +666,7 @@
         </g>
       </svg>
       <h2 class="percentages">1224</h2>
-      <p class="lastParagraph">
+      <p class="lastParagraph geweldsincidentenTekst">
         De onderzoeken die over geweldsincidenten met een vuurwapen worden
         onderzocht door de Rijksrecherge. de Rijksrecherge geeft nog minder data
         vrij dan de politie.
@@ -661,16 +675,16 @@
     </section>
     <section class="blackSection">
       <h1>Missende data</h1>
-      <p>
+      <p class="geweldsincidentenTekst">
         Laten we onze vraag er nog eens bij pakken. Hoe zorgen de
         politieorganisatie en het Openbaar Ministerie dat agenten professioneel
         en binnen de wet handelen?
       </p>
-      <p>
+      <p class="geweldsincidentenTekst">
         We hebben data van de politie gekregen en onderzocht. Maar zijn hierdoor
         eigenlijk niks wijzer geworden. Behalve dat er te weinig openbaar is om
         een goede conclussie te trekken. Waarom is dit? Als het goed gaat is er
-        toch niks om te verbergen? Het geeft bij ons alleen maar meer vragen
+        toch niks om te verbergen? Het heeft bij ons alleen maar meer vragen
         opgeroepen.
       </p>
       <div class="missingDataWrapper">
@@ -845,7 +859,7 @@
             </g>
           </g>
         </svg>
-        <div class="missingDataText">
+        <div class="missingDataText lastParagraph">
           <h2>Politie is niet transparant</h2>
           <p class="missingDataSlider">
             De politie oogt als een partij die werkzaam en dienstbaar is voor
@@ -865,6 +879,7 @@
     </section>
     <section class="yellowSection">
       <div class="socialWrapper">
+        <div class="delenBottom">DELEN</div>
         <a
           href="https://www.facebook.com/sharer/sharer.php?u=https://relaxed-swirles-1ce12c.netlify.com/"
           target="_blank"

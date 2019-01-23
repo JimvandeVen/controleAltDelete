@@ -6,8 +6,9 @@
 }
 
 .socialWrapper{
-  margin-left: 25vw;
+  margin-left: 1em;
 }
+
 .socialStyle{
   margin: 1em 0 0 1em;
   max-width: 2em;
@@ -16,6 +17,18 @@
 .socialStyleBottom{
   margin: 1em 0 1em 1em;
   max-width: 2em;
+}
+
+.delen{
+    width: 4em;
+    display: inline-block;
+    transform: translateY(-40%);
+}
+
+.delenBottom{
+  width: 4em;
+  display: inline-block;
+  transform: translateY(-100%);
 }
 
 section {
@@ -54,7 +67,8 @@ h2 {
 
 .gif{
   margin: 1em 0 1em 0;
-  max-width: 90vw;
+  width: 90vw;
+  height: auto;
   transform: translateX(5vw);
 }
 
@@ -115,7 +129,7 @@ p{
 }
 
 .percentages{
-  transform: translateY(-0.2em);
+  transform: translateY(-0.1em);
   font-size: 2em;
   text-align: center;
 }
@@ -128,10 +142,6 @@ p{
   transform: translateX(5vw);
   max-width: 90vw;
   margin: .5em 0 0 0;
-}
-
-#geweldsincidentenSection {
-  /* height: 300vh; */
 }
 
 #svgTop {
@@ -194,20 +204,17 @@ ul:last-of-type{
   transform: translateX(0%) scale(1);
 }
 
-#geweldsInzet {
+.info {
   z-index: 100;
   text-align: center;
   right: 4em;
   top: 0.2em;
   position: absolute;
-  background-color: #fef33d;
-  color: black;
-  border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
 }
 
-#geweldsInzetPopup {
+.infoPopup {
   right: 4em;
   top: 0.2em;
   max-width: 68vw;
@@ -232,4 +239,116 @@ a{
 
 .hidden {
   display: none;
+}
+
+.desktop{
+  display: none;
+}
+
+@media only screen and (min-width : 585px) and (max-width : 1024px) {
+  .desktop{
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .bottomTriangleBlack {
+    border-bottom: 5vw solid black;
+  }
+
+  .bottomTriangleYellow {
+    border-bottom: 5vw solid #fef33d;
+  }
+
+  .svgGeweldsincidenten {
+    margin: 0 40vw 0 40vw;
+  }
+
+  .gif, .geweldsincidentenTekst, .introSentence, h1{
+    margin: 1em 0 1em 0;
+    width: 60vw;
+    height: auto;
+    transform: translateX(20vw);
+  }
+
+  .missingDataWrapper{
+    margin-left: 30vw;
+  }
+
+  .lastParagraph {
+    margin-bottom: 6em;
+  }
+
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1700px) {
+  .desktop{
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .bottomTriangleBlack {
+    border-bottom: 5vw solid black;
+  }
+
+  .bottomTriangleYellow {
+    border-bottom: 5vw solid #fef33d;
+  }
+
+  .svgGeweldsincidenten {
+    margin: 0 40vw 0 40vw;
+  }
+
+  .gif, .geweldsincidentenTekst, .introSentence, h1{
+    margin: 1em 0 1em 0;
+    width: 50vw;
+    height: auto;
+    transform: translateX(25vw);
+  }
+
+  .missingDataWrapper{
+    margin-left: 30vw;
+  }
+
+  .lastParagraph {
+    margin-bottom: 6em;
+  }
+}
+
+@media only screen  and (min-width : 1700px) {
+  .desktop{
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .bottomTriangleBlack {
+    border-bottom: 4vw solid black;
+  }
+
+  .bottomTriangleYellow {
+    border-bottom: 4vw solid #fef33d;
+  }
+
+  .svgGeweldsincidenten {
+    margin: 0 40vw 0 40vw;
+  }
+
+  .gif, .geweldsincidentenTekst, .introSentence, h1, .missingDataWrapper{
+    margin: 1em 0 1em 0;
+    width: 30vw;
+    height: auto;
+    transform: translateX(35vw);
+  }
+
+  /* .missingDataWrapper{
+    margin-left: 30vw;
+  } */
+
+  .lastParagraph {
+    margin-bottom: 6em;
+  }
 }
