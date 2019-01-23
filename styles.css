@@ -285,6 +285,11 @@ a{
     margin-bottom: 6em;
   }
 
+  .infoPopup {
+    max-width: 40vw;
+    z-index: 99;
+  }
+
 }
 
 @media only screen and (min-width : 1025px) and (max-width : 1700px) {
@@ -311,6 +316,11 @@ a{
     margin: 0 40vw 0 40vw;
   }
 
+  .infoPopup {
+    max-width: 40vw;
+    z-index: 99;
+  }
+
   .gif, .geweldsincidentenTekst, .introSentence, h1{
     margin: 1em 0 1em 0;
     width: 30vw;
@@ -334,6 +344,11 @@ a{
 
   .mobile {
     display: none;
+  }
+
+  .infoPopup {
+    max-width: 40vw;
+    z-index: 99;
   }
 
   .socialWrapper{
