@@ -6,7 +6,7 @@
 }
 
 .socialWrapper{
-  margin-left: 1em;
+  margin-left: 40vw;
 }
 
 .socialStyle{
@@ -254,6 +254,10 @@ a{
     display: none;
   }
 
+  .socialWrapper{
+    margin-left: 55vw;
+  }
+
   .bottomTriangleBlack {
     border-bottom: 5vw solid black;
   }
@@ -287,8 +291,13 @@ a{
   .desktop{
     display: block;
   }
+
   .mobile {
     display: none;
+  }
+
+  .socialWrapper{
+    margin-left: 75vw;
   }
   .bottomTriangleBlack {
     border-bottom: 5vw solid black;
@@ -304,9 +313,9 @@ a{
 
   .gif, .geweldsincidentenTekst, .introSentence, h1{
     margin: 1em 0 1em 0;
-    width: 50vw;
+    width: 30vw;
     height: auto;
-    transform: translateX(25vw);
+    transform: translateX(35vw);
   }
 
   .missingDataWrapper{
@@ -322,9 +331,15 @@ a{
   .desktop{
     display: block;
   }
+
   .mobile {
     display: none;
   }
+
+  .socialWrapper{
+    margin-left: 75vw;
+  }
+
   .bottomTriangleBlack {
     border-bottom: 4vw solid black;
   }
