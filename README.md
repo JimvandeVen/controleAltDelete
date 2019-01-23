@@ -18,7 +18,7 @@ For this product we used the data provided by the police. These were excel sheet
 
 ## Concept and process
 
-We soon found out the data would not provide enough information to really build a story upon. So we decided to tell the story about the missing data. Because visually presenting nothing is quite hard and abstract we stepped away from d3.js and made a simpler, more understandable, article-like website. A lot of the images provided by the designers were .svg. Svg work a tad different than normal images in that they are vector based. This means that they are animateable. So I animated some of them. Underneath a piece of code that animates a circle to fill up.
+We soon found out the data would not provide enough information to really build a story upon. So we decided to tell the story about the missing data. Because visually presenting nothing is quite hard and abstract we stepped away from d3.js and made a simpler, more understandable, article-like website. A lot of the images provided by the designers were .svg. Svg work a tad different than normal images in that they are vector based. This means that they are animatable. So I animated some of them. Underneath a piece of code that animates a circle to fill up.
 
 ``` html
 <svg
@@ -51,7 +51,7 @@ We soon found out the data would not provide enough information to really build 
     </svg>
 ```
 
-Other than working with the SVGs and animating them I used a debounce function that makes the website lighter when working with the onscroll trigger. I also made the website responsive. I did this by using a combination of `vw`, `vh` and media queries. Below you see the debounce function.
+Other than working with the SVGs and animating them I used a debounce function that makes the website lighter when working with the on scroll trigger. I also made the website responsive. I did this by using a combination of `vw`, `vh` and media queries. Below you see the debounce function.
 
 ``` js
 function debounce(func, wait = 10, immediate = true) {
